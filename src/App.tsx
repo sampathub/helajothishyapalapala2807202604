@@ -4548,7 +4548,7 @@ export default function App() {
                 <textarea
                   value={userComment}
                   onChange={(e) => setUserComment(e.target.value)}
-                  placeholder={lang === 'sinhala' ? "වාර්තාව පිළිබඳ ඔබගේ අදහස (අත්‍යවශ්‍ය නොවේ)..." : "Write your comment or feedback (optional)..."}
+                  placeholder={lang === 'sinhala' ? "වාර්තාව පිළිබඳ ඔබගේ අදහස (ඉදිරි සන්වර්දන කටයුතු සදහා)..." : "Write your comment or feedback (optional)..."}
                   className="w-full bg-slate-950 border border-slate-800 focus:border-amber-500 rounded-xl p-3 text-xs text-slate-200 focus:outline-none font-sans"
                   rows={2}
                 />
@@ -5744,7 +5744,7 @@ export default function App() {
                   <form onSubmit={handleRequestChatExtension} className="bg-slate-950 border border-slate-800 rounded-xl p-4 text-left space-y-3">
                     <div className="space-y-1">
                       <label className="text-[11px] text-slate-300 font-sans font-medium block">
-                        {lang === 'sinhala' ? "ඔබගේ WhatsApp අංකය (අවශ්‍ය නම් පමණි - Optional):" : "Your WhatsApp Mobile Number (Optional):"}
+                        {lang === 'sinhala' ? "ඔබගේ WhatsApp අංකය " : "Your WhatsApp Mobile Number (Optional):"}
                       </label>
                       <input
                         type="text"
