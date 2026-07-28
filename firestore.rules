@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // All collections accessible by the Express backend API proxy
+    match /reports/{reportId} {
+      allow read, write: if true;
+    }
+    match /config/{configId} {
+      allow read, write: if true;
+    }
+    match /usage/{usageId} {
+      allow read, write: if true;
+    }
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
+
